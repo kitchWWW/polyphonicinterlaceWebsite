@@ -12,6 +12,13 @@
   src: local('FuturaBold'), url('font/FuturaCondensedExtraBold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'IMFell';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IMFell'), url('font/IMFellDoublePica-Italic.ttf') format('truetype');
+}
+
 
 html { 
   background: url(res/background.jpg) no-repeat center center fixed; 
@@ -64,6 +71,15 @@ b {
   max-width: 370px;
 }
 
+
+.playback{
+  padding: 20px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 330px;
+}
+
 .content{
   background-image: url("res/recGreen.png");
     background-size:100% 100%;
@@ -76,8 +92,32 @@ b {
   font-family: 'Futura', serif;
 }
 
+.playDivWithImage{
+    background-image: url("res/blobOrangePlay.png");
+    background-size: 100% 100%;
+  padding: 10px 0px 10px 40px;
+  margin-top: 30px;
+  margin-left: 100px;
+  font-size: 85px;
+  font-family: 'IMFell', serif;
+}
+
+
+.letsMakeMusic{
+  background-image: url("res/blobGreenBig.png");
+    background-size:100% 100%;
+  padding: 20px;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:  35px;
+  max-width: 330px;
+  font-family: 'Futura', serif;
+}
+
 .funFont{
-  font-family: 'IM Fell Double Pica', serif;
+  font-family: 'IMFell', serif;
 }
 
 .cantDecide{
@@ -90,8 +130,16 @@ b {
   padding-top: 20px;
 }
 
+.makeMusicText{
+  font-family: 'IMFell', serif;
+  margin-top: 10px;
+  padding-top: 15px;
+  font-size: 1.1em;
+  transform: rotate(-5deg);
+}
+
 .headerA{
-  font-family: 'IM Fell Double Pica', serif;
+  font-family: 'IMFell', serif;
   font-size: 45px;
   background-image: url("res/recOrange.png");
     background-size:100% 100%;
@@ -117,6 +165,10 @@ b {
 
 .titleTitleImage{
       max-width: 350px;
+}
+
+.playBlobImage{
+  max-width: 200px;
 }
 
 .appImage {

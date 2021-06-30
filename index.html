@@ -2,18 +2,9 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=500">
-<meta property="og:image" content="res/background.jpg">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&display=swap" rel="stylesheet">
-
-
-
-
-
-  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=500">
+    <meta property="og:image" content="res/background.jpg">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <title>Polyphonic Interlace</title>
 </head>
@@ -21,65 +12,71 @@
 <body>
     <div class="titleSection">
         <div class="title">
-          <img class="titleTitleImage" src="res/titleTitle.png">
+            <img class="titleTitleImage" src="res/titleTitle.png">
         </div>
     </div>
-    <div id="playbutton" class="playbutton" onclick="buttonPressed()">Play Audio</div>
-    <div class="headerA">
-      How to participate:
-    </div>
-    <div class="content">
-      Download the App:
-      <br>
-      <center>
-      <img class="appImage" src="res/appGoogle.png">
-      <img class="appImage" src="res/appApple.png">
-    </center>
-      Be sure to download the app <b> before</b> arriving at Little Island!
-      <br>
-      Reception in the park will be spotty.
-      <br><br>
-      Join us at the <b> Glade</b> on
-      <br>
-      Sunday, <b> August 29</b> at 12 pm
-      <br>
-      or
-      <br>
-      Sunday, <b> September 5</b> at 12pm
-      <br>
-      <div class="cantDecide">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can't decide which date to attend?
-        <br>
-        &nbsp;&nbsp;Come and join us twice! Each performance will sound different from the next.
+    <div class="letsMakeMusic">
+        <div class="makeMusicText"> Let's make music together</div>
+        <div class="playDivWithImage" onclick="buttonPressed()">
+        Play
       </div>
-      <br>
-      Let's press <b>Play</b> at the same time! Composer <b> Raquel Acevedo Klein</b> will provide a count down at the start of the event.
-      <br>
-      <br>
-      Enjoy music coming not only from your own speaker, but other speakers and smartphones throughout the Glade! Pave your own path through the music.
+    </div>
+    <div class="playback" id="myPlaybackDiv">
+      <audio controls id="myAudio">
+        <source src="res/websiteTrack1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div>
 
     <div class="headerA">
-      Learn More
+        How to participate:
     </div>
     <div class="content">
-      <span class="funFont">Polyphonic Interlace</span> is a symphonious, surround-sound performance that invites you to travel amidst a sea of voices, emerging from several directions. Each track has been pre-recorded by composer and vocalist <b>Raquel Acevedo Klein</b>, who weaves her own voice into a polyphonic tapestry of stories from across New York City at the cusp of reopening. All are welcome to play parts of the music from a smartphone.
+        Download the App:
+        <br>
+        <center>
+            <a href="android" target="_blank"><img class="appImage" src="res/appGoogle.png"></a>
+            <a href="iphone" target="_blank"><img class="appImage" src="res/appApple.png"></a>
+        </center>
+        Be sure to download the app <b> before</b> arriving at Little Island! Reception in the park may be spotty.
+        <br><br>
+        Join us at the <b> Glade</b> on
+        <br>
+        Sunday, <b> August 29</b> at 12 pm
+        <br>
+        or
+        <br>
+        Sunday, <b> September 5</b> at 12pm
+        <br>
+        <div class="cantDecide">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can't decide which date to attend?
+            <br>
+            &nbsp;&nbsp;Come and join us twice! Each performance will sound different from the next.
+        </div>
+        <br>
+        Let's press <b>Play</b> at the same time! Composer <b> Raquel Acevedo Klein</b> will provide a count down at the start of the event.
+        <br>
+        <br>
+        Enjoy music coming not only from your own speaker, but other speakers and smartphones throughout the Glade! Pave your own path through the music.
     </div>
-
     <div class="headerA">
-  Location
+        Learn More
     </div>
     <div class="content">
-      <span class="funFont">Polyphonic Interlace</span> will take place at
-      <img class="mapImage" src="res/map.png" alt="map showing glade on the far left">
-      a 2.4-acre public park in Hudson River Park on the West side of Manhattan. It is located in the Hudson River off the West Side Highway with entrances at West 13th and 14th Streets.
+        <span class="funFont">Polyphonic Interlace</span> is a symphonious, surround-sound performance that invites you to travel amidst a sea of voices, emerging from several directions. Each track has been pre-recorded by composer and vocalist <b>Raquel Acevedo Klein</b>, who weaves her own voice into a polyphonic tapestry of stories from across New York City at the cusp of reopening. All are welcome to play parts of the music from a smartphone.
     </div>
-
+    <div class="headerA">
+        Location
+    </div>
+    <div class="content">
+        <span class="funFont">Polyphonic Interlace</span> will take place at
+        <img class="mapImage" src="res/map.png" alt="map showing glade on the far left">
+        a 2.4-acre public park in Hudson River Park on the West side of Manhattan. It is located in the Hudson River off the West Side Highway with entrances at West 13th and 14th Streets.
+    </div>
 </body>
 <script src="myscripts.js"></script>
 
 </html>
-
 <!--
 
 Fonts:
