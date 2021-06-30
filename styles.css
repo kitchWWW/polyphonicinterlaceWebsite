@@ -125,9 +125,10 @@ b {
   background-size:100% 100%;
   transform: rotate(-5deg);
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 20px;
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .makeMusicText{
@@ -161,6 +162,10 @@ b {
 
 .mapImage{
     max-width: 320px;
+}
+
+.playImage{
+    max-height: 80px;
 }
 
 .titleTitleImage{
