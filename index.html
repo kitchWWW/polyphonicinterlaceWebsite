@@ -2,6 +2,13 @@
 <html>
 
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=500">
     <meta property="og:image" content="res/background.jpg">
     <link rel="stylesheet" href="styles.css">
@@ -16,62 +23,93 @@
         </div>
     </div>
     <div class="letsMakeMusic">
-        <div class="makeMusicText"> Let's make music together</div>
-        <div class="playDivWithImage" onclick="buttonPressed()">
-        <img class="playImage" src="res/play.png">
-      </div>
+        <img class="playImage" src="res/FullTitleBlob2.png" onclick="buttonPressed()">
     </div>
-    <div class="playback" id="myPlaybackDiv">
-      <audio controls id="myAudio">
-        <source src="res/websiteTrack1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
     </div>
-
-    <div class="headerA">
-        How to participate:
+    <div class="customPlayer">
+        <center>
+            <div class="iconSpan"><img class="playerIcon" src="res/icon_arrow_anticlock.svg" onclick="rewind()"></div>
+            <div class="iconSpan"><img id="centerIcon" class="playerIcon" src="res/icon_play.svg" onclick="centerButton()"></div>
+            <div class="timestampSpan" id="timestamp">00:00</div>
+            <div class="iconSpan"><img class="playerIcon" src="res/icon_arrow_clock.svg" onclick="fastforward()"></div>
+        </center>
     </div>
-    <div class="content">
-        Download the App:
+    <div class="headerA" id="howToParticipateHeadder">
+        How to participate
+    </div>
+        <div class="content" id="howToParticipateContent">
+        Sign up <a href="https://download.polyphonicinterlace.com" target="_blank">here</a> to receive an email when the smartphone app and audio tracks become available on <b>August 15</b>.
+        
+        <!-- Download the <span class="funFont"><span class="veryFunFont"><i>P</i></span>olyphonic Interlace</span> app:
         <br>
         <center>
-            <a href="android" target="_blank"><img class="appImage" src="res/appGoogle.png"></a>
-            <a href="iphone" target="_blank"><img class="appImage" src="res/appApple.png"></a>
+            <a href="./android" target="_blank"><img class="appImage" src="res/appGoogle.png"></a>
+            <a href="./iphone" target="_blank"><img class="appImage" src="res/appApple.png"></a>
+            <br>or
         </center>
-        Be sure to download the app <b> before</b> arriving at Little Island! Reception in the park may be spotty.
+        Download the tracks! <a href="./track1" target="_blank" download>Track 1</a> or <a href="./track1" target="_blank" download>Track 2</a>.
         <br><br>
+        <i>Smartphone App and Audio Tracks will be available <b>August 15</b></i> -->
+
+        <br><br>
+        Bring bluetooth speakers or any speaker device to amplify your sound!<br> Be sure to download <b> before</b> arriving at Little Island! Reception in the park may be spotty. <img style="float: right;" height="80px" class="appImage" src="res/wifi.png">
+        <br>
+        <br>
         Join us at the <b> Glade</b> on
         <br>
         Sunday, <b> August 29</b> at 12 pm
         <br>
         or
         <br>
-        Sunday, <b> September 5</b> at 12pm
+        Sunday, <b> September 5</b> at 12 pm
         <br>
+        Visit <a href="https://littleisland.org/timed-entry-reservations" target="_blank">littleisland.org</a> to reserve a free timed entry ticket.
         <div class="cantDecide">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can't decide which date to attend?
             <br>
             &nbsp;&nbsp;Come and join us twice! Each performance will sound different from the next.
         </div>
         <br>
-        Let's press <b>Play</b> at the same time! Composer <b> Raquel Acevedo Klein</b> will provide a count down at the start of the event.
+        Let's press <b>Play</b> at the same time! Composer <b> <a class="raquelLink" href="https://www.raquelacevedoklein.com/" target="_blank">Raquel Acevedo Klein</a></b> will provide a count down at the start of the event.
         <br>
         <br>
-        Enjoy music coming not only from your own speaker, but other speakers and smartphones throughout the Glade! Pave your own path through the music.
+        Enjoy music coming not only from your own device, but other speakers and smartphones throughout the Glade! No device? No problem! Just enjoy - pave your own path through the music.
     </div>
-    <div class="headerA">
+    <div class="headerA" id="learnMoreHeader">
         Learn More
     </div>
-    <div class="content">
-        <span class="funFont">Polyphonic Interlace</span> is a symphonious, surround-sound performance that invites you to travel amidst a sea of voices, emerging from several directions. Each track has been pre-recorded by composer and vocalist <b>Raquel Acevedo Klein</b>, who weaves her own voice into a polyphonic tapestry of stories from across New York City at the cusp of reopening. All are welcome to play parts of the music from a smartphone.
+    <div class="content" id="learnMoreContent">
+        <span class="funFont"><span class="veryFunFont"><i>P</i></span>olyphonic Interlace</span> is a symphonious, surround-sound performance that invites you to travel amidst a sea of voices, emerging from several directions. Each track has been pre-recorded by composer and vocalist <b><a class="raquelLink" href="https://www.raquelacevedoklein.com/" target="_blank">Raquel Acevedo Klein</a></b>, who weaves her own voice into a polyphonic tapestry of stories from across New York City at the cusp of reopening. All are welcome to play parts of the music from a smartphone.
     </div>
-    <div class="headerA">
+    <div class="headerA" id="locationHeader">
         Location
     </div>
-    <div class="content">
-        <span class="funFont">Polyphonic Interlace</span> will take place at
-        <img class="mapImage" src="res/map.png" alt="map showing glade on the far left">
+    <div class="content" id="locationContent">
+        <span class="funFont"><span class="veryFunFont"><i>P</i></span>olyphonic Interlace</span> will take place at
+        <img class="mapImage" src="res/map.png" alt="map showing glade on the far left"> <br>
         a 2.4-acre public park in Hudson River Park on the West side of Manhattan. It is located in the Hudson River off the West Side Highway with entrances at West 13th and 14th Streets.
+    </div>
+    <div class="headerA" id="theTeamHeader">
+        The Team
+    </div>
+    <div class="content" id="theTeamContent">
+        Music by <a href="https://www.raquelacevedoklein.com/" target="_blank"> Raquel Acevedo Klein</a>.
+        <br>
+        Mixing by <a href="https://www.khaledjean.com/" target="_blank">Khaled Jean</a> and Brian Schuh
+        <br>
+        Website and App by <a href="http://brianellissound.com/" target="_blank">Brian Ellis</a>.
+        <br>
+    </div>
+    <br><br>
+    <div class="playback">
+        <audio controls id="myAudio1">
+            <source src="res/websiteTrack1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio controls id="myAudio2">
+            <source src="res/websiteTrack2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
 </body>
 <script src="myscripts.js"></script>
