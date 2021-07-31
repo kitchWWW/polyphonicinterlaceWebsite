@@ -6,7 +6,7 @@ const resume_text = "Resume Audio"
 // document.getElementById("myPlaybackDiv").style.display = "none";
 
 var whichToUse = Math.floor(Math.random() * 2);
-var audioPath = 'res/websiteTrack' + (whichToUse + 1) + '_1.mp3';
+var audioPath = './res/websiteTrack' + (whichToUse + 1) + '_1.mp3';
 console.log("using: " + audioPath)
 var audio = new Audio(audioPath);
 
@@ -23,7 +23,7 @@ audio.ontimeupdate = function() {
 
 audio.addEventListener("ended", function() {
   playingAtAll = false
-  document.getElementById('centerIcon').src = 'res/icon_play.svg';
+  document.getElementById('centerIcon').src = './res/icon_play.svg';
 });
 
 var playingAtAll = false
@@ -36,7 +36,7 @@ function buttonPressed() {
   }
   playingAtAll = true
   audio.play();
-  document.getElementById('centerIcon').src = 'res/icon_pause.svg';
+  document.getElementById('centerIcon').src = './res/icon_pause.svg';
 }
 
 function centerButton() {
@@ -45,13 +45,13 @@ function centerButton() {
     // if it is playing, pause it
     playingAtAll = false
     audio.pause()
-    document.getElementById('centerIcon').src = 'res/icon_play.svg';
+    document.getElementById('centerIcon').src = './res/icon_play.svg';
   } else {
     console.log("play!")
     // if it is NOT playing, resume it
     playingAtAll = true
     audio.play()
-    document.getElementById('centerIcon').src = 'res/icon_pause.svg';
+    document.getElementById('centerIcon').src = './res/icon_pause.svg';
   }
 }
 

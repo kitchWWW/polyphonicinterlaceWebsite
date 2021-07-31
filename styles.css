@@ -1,37 +1,46 @@
 @font-face {
   font-family: 'Futura';
-  src: url('font/FuturaCondensedMedium.otf');
+  src: url('./font/FuturaCondensedMedium.otf');
 }
 
 @font-face {
   font-family: 'FuturaBold';
-  src: url('font/FuturaCondensedExtraBold.ttf');
+  src: url('./font/FuturaCondensedExtraBold.ttf');
 }
 
 @font-face {
   font-family: 'IMFell';
-  src: url('font/IMFellDoublePica-Italic.ttf');
+  src: url('./font/IMFellDoublePica-Italic.ttf');
 }
 
 @font-face {
   font-family: 'Baroque';
-  src: url('font/BaroqueTextJFRegular.ttf');
+  src: url('./font/BaroqueTextJFRegular.ttf');
 }
 
-
-html { 
-  background: url(res/background.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 body{
     margin: 0;
   padding: 0;
   font-size: 20px;
 }
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(./res/background.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 b {
   font-family: 'FuturaBold';
@@ -40,7 +49,7 @@ b {
 .titleSection{
   margin-top: 50px;
   width: 100%;
-  background-image: url("res/recOrange.png");
+  background-image: url("./res/recOrange.png");
   background-size:100% 100%;
   text-align: center;
 }
@@ -49,6 +58,7 @@ b {
   font-family: 'Futura';
   padding: 5px;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .titleTitleImage{
@@ -93,7 +103,7 @@ display:  none;
 .playerIcon{
   max-width: 60px;
   max-height: 60px;
-  background-image: url("res/recGreen.png");
+  background-image: url("./res/recGreen.png");
   border-radius:  30px;
   height: 60px;
 }
@@ -109,7 +119,7 @@ display:  none;
 }
 .timestampSpan{
     display:inline-block;
-  background-image: url("res/recGreen.png");
+  background-image: url("./res/recGreen.png");
   border-radius:  15px;
   padding: 10px;
   margin: auto;
@@ -119,7 +129,7 @@ display:  none;
 }
 
 .content{
-  background-image: url("res/recGreen.png");
+  background-image: url("./res/recGreen.png");
     background-size:100% 100%;
   padding: 20px;
   font-size: 25px;
@@ -131,7 +141,7 @@ display:  none;
 */}
 
 .playDivWithImage{
-    background-image: url("res/blobOrangePlay.png");
+    background-image: url("./res/blobOrangePlay.png");
     background-size: 100% 100%;
   padding: 10px 0px 10px 40px;
   margin-top: 30px;
@@ -163,7 +173,7 @@ display:  none;
 }
 
 .cantDecide{
-  background-image: url("res/blobOrangeCantDecide.png");
+  background-image: url("./res/blobOrangeCantDecide.png");
   background-size:100% 100%;
   transform: rotate(-5deg);
   font-size: 20px;
@@ -184,7 +194,7 @@ display:  none;
 .headerA{
   font-family: 'IMFell';
   font-size: 45px;
-  background-image: url("res/recOrange.png");
+  background-image: url("./res/recOrange.png");
     background-size:100% 100%;
 
   margin-left: auto;
