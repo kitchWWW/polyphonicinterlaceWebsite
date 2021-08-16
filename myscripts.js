@@ -6,9 +6,9 @@ const resume_text = "Resume Audio"
 // document.getElementById("myPlaybackDiv").style.display = "none";
 
 var whichToUse = Math.floor(Math.random() * 2);
-var audioPath = './res/phoneA.mp3';
+var audioPath = './res/Phone_A_new.mp3';
 if (Math.random() < .5) {
-  audioPath = './res/phoneB.mp3';
+  audioPath = './res/Phone_B_new.mp3';
 }
 console.log("using: " + audioPath)
 var audio = new Audio(audioPath);

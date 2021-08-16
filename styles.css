@@ -183,6 +183,34 @@ display:  none;
   padding-bottom: 10px;
 }
 
+.trackLabelA{
+  background-image: url("./res/blobOrangeCantDecide2.png");
+  background-size:100% 100%;
+  font-size: 30px;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: inline;
+  text-align: center;
+  width: 50%;
+  margin: 10px;
+}
+
+.trackLabelB{
+  background-image: url("./res/blobOrangeCantDecide3.png");
+  background-size:100% 100%;
+  font-size: 30px;
+  padding-left: 25px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  display: inline;
+  text-align: center;
+  width: 50%;
+  margin: 10px;
+}
+
 .makeMusicText{
   font-family: 'IMFell';
   margin-top: 10px;
