@@ -6,7 +6,10 @@ const resume_text = "Resume Audio"
 // document.getElementById("myPlaybackDiv").style.display = "none";
 
 var whichToUse = Math.floor(Math.random() * 2);
-var audioPath = './res/websiteTrack' + (whichToUse + 1) + '_1.mp3';
+var audioPath = './res/phoneA.mp3';
+if (Math.random() < .5) {
+  audioPath = './res/phoneB.mp3';
+}
 console.log("using: " + audioPath)
 var audio = new Audio(audioPath);
 
@@ -57,7 +60,7 @@ function centerButton() {
 
 function rewind() {
   console.log("rr")
-  var newTime = (audio.currentTime - 15) + "";
+  var newTime = (audio.currentTime - 30) + "";
   console.log(newTime)
   audio.currentTime = newTime
 }
@@ -65,7 +68,7 @@ function rewind() {
 
 function fastforward() {
   console.log("ff")
-  var newTime = (audio.currentTime + 15) + "";
+  var newTime = (audio.currentTime + 30) + "";
   console.log(newTime)
   audio.currentTime = newTime
   console.log(audio.currentTime)
